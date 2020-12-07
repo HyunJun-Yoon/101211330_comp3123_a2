@@ -23,7 +23,7 @@ function App() {
                     <sup>{weather.sys.country}</sup>
                 </h2>
                 <div className="city-temp">
-                    {Math.round(weather.main.temp)}
+                    {Math.round(weather.main.temp-273.15)}
                     <sup>&deg;C</sup>
                 </div>
                 <div className="info">
